@@ -15,7 +15,6 @@ jobs:
     docker:
       - image: "circleci/python:3.6.4"
     steps:
-      - download and install pytest
       - run: install pytest -y
 
       - checkout
