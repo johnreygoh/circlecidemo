@@ -16,7 +16,9 @@ jobs:
       - image: "circleci/python:3.6.4"
     steps:
       - install pytest
-      - run: python3.exe -m pip install pytest -y
+      - run: | 
+          python3.exe -m pip install --upgrade -y
+          python3.exe -m pip install pytest -y
 
       - checkout
       - run: python3 test_main.py
